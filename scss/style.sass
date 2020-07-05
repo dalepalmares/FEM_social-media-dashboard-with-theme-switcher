@@ -246,11 +246,9 @@ body
         &--red
           color: $brightRed
 
-@media only screen and (min-width: 1100px)
-  body
-    padding-left: 8rem
-    padding-right: 8rem
-    overflow-x: hidden
+// Tablets
+@media only screen and (min-width: 600px)
+  overflow-x: hidden
 
   .background
     &-top
@@ -288,10 +286,22 @@ body
 
   .top
     margin-top: 3rem
+    grid-template-columns: repeat(2, 1fr)
+
+  .bottom
+    grid-template-columns: repeat(2, 1fr)
+
+    &__title
+      font-size: 1.67rem
+
+// Desktops
+@media only screen and (min-width: 1200px)
+  body
+    padding-left: 8rem
+    padding-right: 8rem
+
+  .top
     grid-template-columns: repeat(4, 1fr)
 
   .bottom
     grid-template-columns: repeat(4, 1fr)
-
-    &__title
-      font-size: 1.67rem
