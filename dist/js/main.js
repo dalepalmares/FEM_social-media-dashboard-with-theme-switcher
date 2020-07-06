@@ -10,7 +10,7 @@ const sliderCircle = document.querySelector(".header__right__slider__circle");
 // Top Elements
 const topCards = document.querySelectorAll(".top__card");
 const topCardsHandles = document.querySelectorAll(".top__card__handle span");
-const topCardsStatsH1 = document.querySelectorAll(".top__card__stats h1");
+const topCardsStatsH1 = document.querySelectorAll(".top__card__stats h2");
 const topCardsStatsP = document.querySelectorAll(".top__card__stats p");
 
 // Bottom Elements
@@ -46,8 +46,8 @@ slider.addEventListener("click", () => {
     topCardsHandles.forEach((handle) => {
       handle.style.color = "hsl(228, 34%, 66%)";
     });
-    topCardsStatsH1.forEach((h1) => {
-      h1.style.color = "hsl(0, 0%, 100%)";
+    topCardsStatsH1.forEach((h2) => {
+      h2.style.color = "hsl(0, 0%, 100%)";
     });
     topCardsStatsP.forEach((p) => {
       p.style.color = "hsl(228, 34%, 66%)";
@@ -87,8 +87,8 @@ slider.addEventListener("click", () => {
     topCardsHandles.forEach((handle) => {
       handle.removeAttribute("style");
     });
-    topCardsStatsH1.forEach((h1) => {
-      h1.removeAttribute("style");
+    topCardsStatsH1.forEach((h2) => {
+      h2.removeAttribute("style");
     });
     topCardsStatsP.forEach((p) => {
       p.removeAttribute("style");
